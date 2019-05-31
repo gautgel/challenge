@@ -1,0 +1,219 @@
+/*police*/
+
+
+@font-face{
+    font-family: "Cinzelregular";
+    src: url("font/Cinzel-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Cinzelbold";
+    src: url("font/Cinzel-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Cinzelblack";
+    src: url("font/Cinzel-Black.ttf");
+}
+
+@font-face{
+    font-family: "Montserratlight";
+    src: url("font/Montserrat-Light.ttf");
+}
+@font-face{
+    font-family: "Montserratbold";
+    src: url("font/Montserrat-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Montserratitalic";
+    src: url("font/Montserrat-Italic.ttf");
+}
+
+@font-face{
+    font-family: "Montserratblack";
+    src: url("font/Montserrat-Black.ttf");
+}
+
+
+/* police */
+
+/*page mystere*/
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Montserratlight";
+    font-size: 4vmin;
+}
+
+
+
+.corps{
+    width:100vw;
+    height:100vh;
+    background-image: url("../Images/background.jpg");
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 5% 20% 20% 10% 35% 10%;
+    grid-template-rows: 15% 5% 50% 25% 5%;
+}
+
+/*Barre de nav*/
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end:2;
+    background-color:#373737;
+    border:0.4vmin solid #C0B283;
+}
+.logo{
+    width:33vmin;
+    height:11vmin;
+    background-image: url("../Images/olivier-logo.png");
+    background-size:cover;
+}
+.bar{
+    display: flex;
+    justify-content:flex-start;
+    grid-column: 4/6;
+    grid-row:1/2;
+
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style:none;
+}
+li{
+    margin-left: 10vmin;
+}
+
+a{
+    text-decoration: none;
+    color:#F4F4F4;
+    font-family: "Montserratlight";
+    font-size:2.5vmin;
+}
+
+a:hover{
+    color:#C0B283;
+}
+
+/*Barre de nav*/
+
+/*animation de bienvenue*/
+
+.pagemystere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size:6vmin;
+    color:#C0B283;
+    text-shadow: 0.3vmin 0.3vmin #F4F4F4;
+    grid-column: 5/6;
+    grid-row:3/5;
+    text-align: center;
+    text-transform: uppercase;
+    animation: pagemystere 5s;
+    border:0.4vmin solid #F4F4F4 rgba(192,178,131,0);
+    background-color: rgba(55,55,55,0);
+}
+
+@keyframes pagemystere{
+    from{opacity: 0;
+        border:0.4vmin solid rgba(192,178,131,0);
+        background-color: rgba(55,55,55,0);
+    }
+    to{
+    opacity: 1;
+    border:0.4vmin solid rgba(192,178,131,1);
+    background-color: rgba(55,55,55,1);
+    }
+}
+
+/*animation de bienvenue*/
+
+
+/*block de gauche*/
+
+.youtube{
+    grid-column: 2/4;
+    grid-row:3/4;
+    border:0.4vmin solid #C0B283;
+}
+
+.boutyout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/4;
+    grid-row:4/5;
+}
+
+.logoyout{
+    width:15vmin;
+    height:15vmin;
+    background-image: url("../Images/youtube.png");
+    background-size: cover;
+    margin-right:5vmin;
+    animation: youtube 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes youtube{
+    from{
+        width:15vmin;
+        height:15vmin;
+    }
+    to{
+        width:22vmin;
+        height:22vmin;
+    }
+}
+
+/*block de gauche*/
+
+
+/*block de droite*/
+.chaine{
+    text-align: justify;
+    font-size:3.5vmin;
+    grid-column: 5/6;
+    grid-row:3/5;
+    border:0.4vmin solid #C0B283;
+    background-color: rgba(55, 55, 55, 0.8);
+    color: #C0B283;
+}
+
+/*block de droite*/
+
+
+
+/*page mystere*/
+
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 4/5;
+    grid-row:5/6;
+    font-size:3vmin;
+    font-family: "Montserratbold";
+    color:#C0B283;
+    text-shadow:0.3vmin 0.3vmin #373737;
+}
+
+/*Footer*/

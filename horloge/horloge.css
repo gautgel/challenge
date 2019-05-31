@@ -1,0 +1,207 @@
+/*police*/
+
+
+@font-face{
+    font-family: "Cinzelregular";
+    src: url("font/Cinzel-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Cinzelbold";
+    src: url("font/Cinzel-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Cinzelblack";
+    src: url("font/Cinzel-Black.ttf");
+}
+
+@font-face{
+    font-family: "Montserratlight";
+    src: url("font/Montserrat-Light.ttf");
+}
+@font-face{
+    font-family: "Montserratbold";
+    src: url("font/Montserrat-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Montserratitalic";
+    src: url("font/Montserrat-Italic.ttf");
+}
+
+@font-face{
+    font-family: "Montserratblack";
+    src: url("font/Montserrat-Black.ttf");
+}
+
+
+/* police */
+
+
+/*Page d'accueil*/
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Montserratlight";
+    font-size: 4vmin;
+}
+.corps{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 15% 20% 35% 20% 10%;
+    background-image: url("../Images/background.jpg");
+    background-size:cover;
+}
+
+
+/*Barre de nav*/
+
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:2;
+    background-color:#373737;
+    border:0.4vmin solid #C0B283;
+}
+
+.logo{
+    width:33vmin;
+    height:11vmin;
+    background-image: url("../Images/olivier-logo.png");
+    background-size:cover;
+}
+
+.bar{
+    display: flex;
+    justify-content:flex-start;
+    grid-column: 4/6;
+    grid-row:1/2;
+
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style:none;
+}
+
+li{
+    margin-left: 10vmin;
+}
+
+a{
+    text-decoration: none;
+    color:#F4F4F4;
+    font-family: "Montserratlight";
+    font-size:2.5vmin;
+}
+
+a:hover{
+    color:#C0B283;
+    animation: titre 0.6s;
+}
+
+
+/*Barre de nav*/
+
+
+
+
+
+/*description*/
+
+
+.description{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:center;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end:4;
+    background-image:url("../Images/pattern_02.jpg");
+    background-size:cover;
+    border:0.4vmin solid #C0B283;
+}
+
+.logo1{
+    width:28vmin;
+    height:9vmin;
+    background-image: url("../Images/olivier-logo.png");
+    background-size:cover;
+    border:0.3vmin solid #373737;
+}
+
+.desc{
+    font-size:2vmin;
+    color:#373737;
+    font-weight:bold;
+    text-align: center;
+    text-shadow: 0.2vmin 0.2vmin #C0B283;
+}
+
+.servbut{
+    width:12vmin;
+    height:6vmin;
+    background-color:#373737;
+    color:#C0B283;
+    font-size:1.5vmin;
+    border:0.2vmin solid #C0B283;
+}
+
+.servbut:hover{
+    color:#373737;
+    background-color: #C0B283;
+    border:0.2vmin solid #373737;
+    animation:boutonserv 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boutonserv{
+    from{
+        width:12vmin;
+        height:6vmin;
+    }
+    to{
+        width:14vmin;
+        height:7vmin;
+    }
+}
+
+/*description*/
+
+
+/*Page d'accueil*/
+
+
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 1/4;
+    grid-row:5/6;
+    font-size:3vmin;
+    font-family: "Montserratbold";
+    color:#C0B283;
+    text-shadow:0.3vmin 0.3vmin #373737;
+
+}
+
+/*Footer*/
